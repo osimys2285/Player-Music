@@ -1,0 +1,178 @@
+.player-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px 140px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.player-page__cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.25);
+  background: #ede9fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.player-page__cover-wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.25);
+  background: #ede9fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  flex-shrink: 0;
+}
+.player-page__cover-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-page__title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.player-page__artist {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.player-page__seek {
+  width: 100%;
+  max-width: 360px;
+  accent-color: #7c3aed;
+  cursor: pointer;
+  height: 4px;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 360px;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 4px;
+  margin-bottom: 28px;
+}
+
+.player-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+.player-page__controls button {
+  font-size: 20px;
+  color: #9ca3af;
+  transition: color 0.15s;
+}
+.player-page__controls button:hover {
+  color: #7c3aed;
+}
+.player-page__play {
+  background: #7c3aed !important;
+  color: #fff !important;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.4);
+  transition: background 0.15s !important;
+}
+.player-page__play:hover {
+  background: #5b21b6 !important;
+}
+
+.player-page__volume {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 36px;
+}
+.player-page__volume input {
+  width: 120px;
+  accent-color: #7c3aed;
+}
+
+.player-page__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* Далее в плейлисте */
+.player-page__queue {
+  width: 100%;
+  max-width: 360px;
+}
+.player-page__queue h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+.queue-track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f5;
+  cursor: pointer;
+}
+.queue-track:last-child {
+  border-bottom: none;
+}
+.queue-track__cover {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #ede9fe;
+  flex-shrink: 0;
+}
+.queue-track__info {
+  flex: 1;
+  min-width: 0;
+}
+.queue-track__title {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.queue-track__artist {
+  display: block;
+  font-size: 11px;
+  color: #9ca3af;
+}
+.queue-track__duration {
+  font-size: 12px;
+  color: #9ca3af;
+}
